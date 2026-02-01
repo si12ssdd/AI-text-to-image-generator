@@ -4,11 +4,41 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Outfit;
+  scroll-behavior: smooth;
 }
 
-.grey-placeholder::placeholder{
+body {
+  @apply text-slate-800;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4b5fd;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a78bfa;
+}
+
+.grey-placeholder::placeholder {
   color: #e0e0e0;
   font-weight: 300;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
