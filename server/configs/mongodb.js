@@ -6,7 +6,11 @@ const connectDB = async () => {
         console.log("Database Connected");
     })
 
-    await mongoose.connect(`${process.env.MONGODB_URI}/ai-image`)
+    try {
+        await mongoose.connect(`${process.env.MONGODB_URI}/ai-image`)
+    } catch (error) {
+        console.error("Database connection error details:", error);
+    }
 
 }
 

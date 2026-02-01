@@ -22,20 +22,20 @@ const Navbar = () => {
                                 <img className='w-5' src={assets.credit_star} alt="" />
                                 <p className='text-xs sm:text-sm font-medium text-gray-600'>Credits left : {credit}</p>
                             </button>
-                            <p className='text-gray-600 max-sm:hidden pl-4'>Hi, {user.name}</p>
+                            <p className='text-gray-700 max-sm:hidden pl-4'>Hi, {user.name}</p>
                             <div className='relative group'>
                                 <img className='w-10 drop-shadow' src={assets.profile_icon} alt="" />
-                                <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-black rounded  pt-12'>
-                                    <ul className='list-none m-0 p-2 bg-white rounded-md border  text-sm'>
-                                        <li onClick={logout} className='py-1 px-2 cursor-pointer pr-10'>Logout</li>
+                                <div className='absolute hidden group-hover:block top-0 right-0 z-10 text-white rounded  pt-12'>
+                                    <ul className='list-none m-0 p-2 bg-white rounded-md border text-sm'>
+                                        <li onClick={logout} className='py-1 px-2 cursor-pointer pr-10 hover:bg-slate-100 rounded'>Logout</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
                         : <div className='flex items-center gap-2 sm:gap-5'>
-                            <p onClick={() => navigate('/buy')} className='cursor-pointer'>Pricing</p>
-                            <button onClick={() => setShowLogin(true)} className='bg-zinc-800 text-white px-7 py-2 sm:px-10 sm:py-2 text-sm rounded-full'>
+                            <p onClick={() => navigate('/buy')} className='cursor-pointer text-gray-700'>Pricing</p>
+                            <button onClick={() => setShowLogin(true)} className='bg-zinc-800 text-white px-7 py-2 sm:px-10 sm:py-2 text-sm rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300'>
                                 Login
                             </button>
                         </div>
