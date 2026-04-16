@@ -21,3 +21,6 @@ app.use('/api/image',imageRouter)
 app.get('/', (req,res) => res.send("API Working"))
 
 app.listen(PORT, () => console.log('Server running on port ' + PORT));
+
+export default app;
+
