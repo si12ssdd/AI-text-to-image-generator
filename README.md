@@ -5,8 +5,8 @@ A full-stack AI-powered web application that converts text prompts into high-qua
 ---
 
 ## 🚀 Live Demo
-**Frontend:** https://client-woad-theta-67.vercel.app  
-**Backend API:** https://ai-text-to-image-generator-vn3y-59bfsftmk.vercel.app/
+**Frontend:** https://text-to-image-frontend-sigma.vercel.app/
+**Backend API:** https://text-to-image-backend-plum.vercel.app/
 
 ---
 
