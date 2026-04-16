@@ -1,7 +1,7 @@
+import React, { useState, useContext } from 'react'
 import { assets } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 import { motion } from 'framer-motion'
-
 const Result = () => {
 
   const [input, setInput] = useState('')
