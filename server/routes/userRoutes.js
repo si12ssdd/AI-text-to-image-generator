@@ -25,7 +25,7 @@ userRouter.post('/login', loginUser)       // Open login path
 // ── Credit Balance & Payment Endpoints ───────────────────────────────────────
 
 // Protected: Retrieves user credit balance
-userRouter.get('/credits', authUser, userCredits)
+userRouter.post('/credits', authUser, userCredits)
 
 // Protected: Sets up a pending Razorpay transaction
 userRouter.post('/pay-razor', authUser, paymentRazorpay)
